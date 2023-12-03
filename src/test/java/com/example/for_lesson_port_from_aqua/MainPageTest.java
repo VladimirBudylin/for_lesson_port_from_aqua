@@ -32,7 +32,7 @@ public class MainPageTest {
     @Test
     public void search() {
         mainPage.searchButton.click();
-        String sata = "Java";
+        String data = "Java";
         $("[data-test='search-input']").sendKeys(data);
         $("button[data-test='full-search-button']").click();
 
