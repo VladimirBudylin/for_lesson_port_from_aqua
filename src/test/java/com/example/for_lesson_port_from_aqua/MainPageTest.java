@@ -32,11 +32,11 @@ public class MainPageTest {
     @Test
     public void search() {
         mainPage.searchButton.click();
-
-        $("[data-test='search-input']").sendKeys("Selenium");
+        String sata = "Java";
+        $("[data-test='search-input']").sendKeys(data);
         $("button[data-test='full-search-button']").click();
 
-        $("input[data-test='search-input']").shouldHave(attribute("value", "Selenium"));
+        $("input[data-test='search-input']").shouldHave(attribute("value", data));
     }
 
     @Test
